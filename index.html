@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Mr.Beans Coffee Shop</title>
+</head>
+<body class="container">
+    
+    <nav class="nav">
+        <img src="img/cup.svg" alt="Cup logo">
+        <span class="nav__name">Mr.Beans Coffee Shop</span>
+    </nav>
+
+    <header class="info">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="img/Drip Coffee.mp4" type="video/mp4"> Your browser is not supported!
+            </video>
+        </div>
+        <h2 class="info__txtBG"><img src="img/Whtclock.svg" alt="Clock Icon" class="info__clock">Hours</h2>
+            <span class="info__txtSML">Mon - Fri &#43; Sunday 7am - 2pm</span>
+            <span class="info__txtSML">Saturday 4pm - Midnight</span>
+        <h2 class="info__txtBG"><img src="img/Whtlocation.svg" alt="Map Icon" class="info__map">Location</h2>
+            <span class="info__txtSML">123 Charles St, Whoville NY</span>
+        <h2 class="info__txtBG"><img src="img/Whtphone.svg" alt="Phone Icon" class="info__phone">Call us</h2>
+            <span class="info__txtSML">(585) 000-0000</span>
+    </header>
+
+    <div class="coffeeGallery">
+        <div class="coffeeGallery__mySlides coffeeGallery__fade">
+            <img src="img/Rectangle 39.svg" alt="" class="coffeeGallery__img">
+        </div>
+        <div class="coffeeGallery__mySlides coffeeGallery__fade">
+            <img src="img/Rectangle 73.svg" alt="" class="coffeeGallery__img">
+        </div>
+        <div class="coffeeGallery__mySlides coffeeGallery__fade">
+            <img src="img/Rectangle 74.svg" alt="" class="coffeeGallery__img">
+        </div>
+        <div class="coffeeGallery__mySlides coffeeGallery__fade">
+            <img src="img/Rectangle 75.svg" alt="" class="coffeeGallery__img">
+        </div>
+        <div class="coffeeGallery__mySlides coffeeGallery__fade">
+            <img src="img/Rectangle 76.svg" alt="" class="coffeeGallery__img">
+        </div>
+    </div>
+
+    <div class="artContainer">
+        <div class="artGallery">
+            <span class="artGallery__headingBG">We Sell Your Art</span>
+            <div class="artGallery__mySlides artGallery__fade">
+                <img src="img/Rectangle 78.svg" alt="Art image" class="artGallery__img">
+            </div>
+            <div class="artGallery__mySlides artGallery__fade">
+                <img src="img/Rectangle 62.svg" alt="Art image" class="artGallery__img">
+            </div>
+            <div class="artGallery__mySlides artGallery__fade">
+                <img src="img/Rectangle 77.svg" alt="Art image" class="artGallery__img">
+            </div>
+            <div class="artGallery__mySlides artGallery__fade">
+                <img src="img/Rectangle 79.svg" alt="Art image" class="artGallery__img">
+            </div>
+            <div class="artGallery__mySlides artGallery__fade">
+                <img src="img/Rectangle 80.svg" alt="Art image" class="artGallery__img">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dotContainer"> <!-- The dots/circles -->
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <div class="music">
+        <h2 class="musicHeader">Live Music Every Saturday Night</h2>
+        <img src="img/musicIMG.svg" alt="Music Stage" class="musicImg">
+        <div class="schContainer">
+            <img src="img/calendar.svg" alt="calendar background" class="schContainer__calendar">
+        </div>
+            <span class="txtBG">October Schedule</span>
+            <span class="txtSML">Joywave - Oct, 11 @ 9:00pm</span>
+            <span class="txtSML">Billy Blues - Oct, 18 @ 8:00pm</span>
+            <span class="txtSML">Backstreet Boys - Oct, 25 @ 8:00pm</span>
+        <button class="musicBTN">Musician's Click Here</button>
+    </div>
+
+    <section class="pets">
+        Fury friends
+    </section>
+
+    <footer class="footer">
+        Footer
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+

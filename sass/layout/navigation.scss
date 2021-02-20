@@ -1,0 +1,26 @@
+.nav {
+    background: var(--color-background-header);
+    display: flex;
+    grid-column: full-start / full-end;
+    grid-row: 1 / 2;
+
+    z-index: 10;
+
+    &__name {
+        font-family: 'rambla', sans-serif;
+        font-size: 2rem;
+        letter-spacing: .10rem;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-right: auto;
+        align-self: center;
+    }
+}
+
+.nav img {
+    display: block;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-left: 1rem;
+    margin-top: .5rem;
+}

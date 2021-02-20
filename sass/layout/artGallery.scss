@@ -1,0 +1,92 @@
+.artContainer {
+    position: relative;
+    margin: auto;
+    margin-bottom: auto;
+    grid-column: center-start / center-end;
+    grid-row: 4 / 5;
+}
+
+.artGallery {
+   
+
+    &__headingBG { //Picture Heading
+        font-family: 'Raleway';
+        font-weight: 300;
+        color: var(--color-text-main);
+        font-size: 3rem;
+    }
+
+    &__mySlides { //Pictures
+        display: none;
+    }
+
+    &__fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2.5s;
+        animation-name: fade;
+        animation-duration: 2.5s;
+        }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .70}
+        to {opacity: 1}
+        }
+        
+        @keyframes fade {
+        from {opacity: .70}
+        to {opacity: 1}
+        }
+
+    &__img {
+        display: block;
+        height: auto;
+        width: 100%;
+        max-width: 22rem;
+        border-radius: 10px;
+        box-shadow: (4px 4px 4px rgba(0, 0, 0, 0.35));
+    }
+}
+
+//Next & previous buttons 
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 1rem;
+    color: #FBF6F6;
+    font-weight: bold;
+    font-size: 2.8rem;
+    transition: 1s ease;
+    border-radius: 0 50px 50px 0;
+    user-select: none;
+  }
+  
+  //Position the "next button" to the right
+  .next {
+    right: 0;
+  }
+
+.dotContainer {
+    margin-top: -3rem;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px -1rem 0;
+    background-color: #FBF6F6;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease-in;
+
+    z-index: 100;
+  }
+  
+  .active { //Dots active
+    background-color: #322F2F;
+    z-index: 100;
+  }

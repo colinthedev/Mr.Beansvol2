@@ -1,0 +1,6 @@
+.container {
+    background: var(--color-background-main);
+    display: grid;
+    grid-template-rows: 13vh 90vh 40vh 50vh repeat(3, min-content);
+    grid-template-columns: [full-start] auto [center-start] repeat(7, [col-start] minmax(min-content, 5rem)[col-end]) [center-end] auto [full-end];
+}

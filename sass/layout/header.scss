@@ -1,0 +1,74 @@
+.info {
+    background-color: rgb(53, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-column: full-start / full-end;
+    grid-row: 2 / 3;
+    z-index: 10;
+
+    &__txtBG {
+        color: var(--color-text-white);
+        font-family: 'Raleway';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 4rem;
+        letter-spacing: 3px;
+        z-index: 10;
+    }
+
+    &__txtSML {
+        color: var(--color-text-white);
+        font-family: 'Raleway';
+        font-weight: 300;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        z-index: 10;
+    }
+
+    &__clock {
+        margin-right: 1rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &__map {
+        margin-right: 1rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &__phone {
+        margin-right: 1rem;
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    height: 103%;
+    width: 100%;
+    opacity: .40;
+    overflow: hidden;
+
+    z-index: -1;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+
+        z-index: 1;
+    }
+}
+
+
+
