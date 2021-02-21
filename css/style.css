@@ -7,6 +7,14 @@
   --color-text-white: #FEFCFC;
   --color-background-musicians: linear-gradient(180deg, rgba(99, 72, 50, 0.64) 0%, #634832 100%); }
 
+.socialBTN {
+  cursor: pointer;
+  display: block;
+  color: #fff;
+  margin-right: 1rem;
+  height: 3rem;
+  width: 3rem; }
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -346,23 +354,38 @@ template {
 
 .artContainer {
   position: relative;
-  margin: auto;
-  margin-bottom: auto;
+  height: 100%;
+  margin: 2rem auto auto auto;
   grid-column: center-start / center-end;
   grid-row: 4 / 5; }
 
-.artGallery__headingBG {
+.artBTN {
+  cursor: pointer;
+  height: 2.5rem;
+  width: 11rem;
   font-family: 'Raleway';
-  font-weight: 300;
-  color: var(--color-text-main);
-  font-size: 3rem; }
-.artGallery__mySlides {
-  display: none; }
-.artGallery__fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
-  animation-name: fade;
-  animation-duration: 2.5s; }
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--color-text-white);
+  background-image: url("../img/Rectangle 15.svg");
+  border-radius: 50px;
+  margin: 1rem auto auto auto;
+  z-index: 100; }
+
+.artGallery {
+  display: grid; }
+  .artGallery__headingBG {
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: var(--color-text-main);
+    font-size: 3rem; }
+  .artGallery__mySlides {
+    display: none; }
+  .artGallery__fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s; }
 @-webkit-keyframes fade {
   from {
     opacity: .70; }
@@ -373,13 +396,13 @@ template {
     opacity: .70; }
   to {
     opacity: 1; } }
-.artGallery__img {
-  display: block;
-  height: auto;
-  width: 100%;
-  max-width: 22rem;
-  border-radius: 10px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35); }
+  .artGallery__img {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 22rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35); }
 
 .prev, .next {
   cursor: pointer;
@@ -399,7 +422,7 @@ template {
   right: 0; }
 
 .dotContainer {
-  margin-top: -3rem;
+  margin-top: -6.5rem;
   text-align: center; }
 
 .dot {
@@ -450,7 +473,48 @@ template {
 .footer {
   background: var(--color-background-footer);
   grid-column: full-start / full-end;
-  grid-row: 7 / 8; }
+  grid-row: 7 / 8;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem; }
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto auto 2rem; }
+
+.infoContainer button {
+  cursor: pointer; }
+
+.socialContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: auto; }
+
+.socialContainer button {
+  height: 50%; }
+
+.BtnContainer {
+  display: flex;
+  justify-content: center; }
+
+.follow {
+  display: inline-block;
+  height: 25%;
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Raleway';
+  margin-top: 2rem; }
+
+.socialBTN {
+  cursor: pointer;
+  display: block;
+  color: #fff;
+  margin-right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: .5rem; }
 
 .info {
   background-color: #351f1f;
@@ -514,7 +578,8 @@ template {
 
 .music {
   grid-column: full-start / full-end;
-  grid-row: 5 / 6; }
+  grid-row: 5 / 6;
+  margin-top: 4rem; }
 
 .musicHeader {
   display: flex;
@@ -522,7 +587,7 @@ template {
   font-family: 'Raleway';
   font-weight: 500;
   color: var(--color-text-main);
-  font-size: 2.25rem;
+  font-size: 2rem;
   margin-bottom: 2rem; }
 
 .musicImg {
@@ -534,13 +599,11 @@ template {
   border-radius: 16px;
   z-index: 100; }
 
-.schContainer {
-  position: relative; }
-  .schContainer__calendar {
-    display: block;
-    width: 100%;
-    opacity: 50%;
-    z-index: -1; }
+.calendar {
+  display: block;
+  width: 100%;
+  opacity: 50%;
+  z-index: -1; }
 
 .nav {
   background: var(--color-background-header);
@@ -565,8 +628,31 @@ template {
   margin-top: .5rem; }
 
 .pets {
-  background-color: blue;
   grid-column: full-start / full-end;
-  grid-row: 6 / 7; }
+  grid-row: 6 / 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .pets__header {
+    font-size: 2rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    color: var(--color-text-main);
+    margin-bottom: 1.5rem;
+    margin-top: 3rem; }
+
+.imgContainer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .imgContainer__dogOuter {
+    height: inherit;
+    width: 25%;
+    margin-bottom: 1rem; }
+  .imgContainer__dogMiddle {
+    width: 40%; }
 
 /*# sourceMappingURL=style.css.map */
